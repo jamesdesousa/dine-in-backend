@@ -1,6 +1,6 @@
 class RestaurantsController < ApplicationController
     def index
-        @restaurants = Restaurant.order(params[:id])
+        @restaurants = Restaurant.order(:id)
         render json: @restaurants
     end
 
@@ -38,7 +38,7 @@ class RestaurantsController < ApplicationController
 
     private
     def restaurant_params
-        params.permit(:name, :address, :review, :descripton, :rating, :location_id, :cuisine_id)
+        params.permit(:name, :address, :review, :description, :rating, :location_id, :cuisine_id, :image)
     end
 
 end
