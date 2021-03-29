@@ -1,6 +1,6 @@
 class RestaurantsController < ApplicationController
     def index
-        @restaurants = Restaurant.order(:id)
+        @restaurants = Restaurant.order(params[:id])
         render json: @restaurants
     end
 

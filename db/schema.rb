@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2021_03_26_183950) do
 
   create_table "restaurants", force: :cascade do |t|
     t.string "name"
+    t.string "image"
     t.string "address"
     t.integer "cuisine_id"
     t.integer "location_id"
