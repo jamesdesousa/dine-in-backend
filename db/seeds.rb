@@ -5,6 +5,9 @@ thai = Cuisine.create(name:"Thai")
 italian = Cuisine.create(name:"Italian")
 soul = Cuisine.create(name:"Soul Food")
 indian = Cuisine.create(name:"Indian")
+mexican= Cuisine.create(name:"Mexican")
+korean_bbq= Cuisine.create(name: "Korean BBQ")
+caribbean= Cuisine.create(name: "Caribbean")
 
 ####Location seed data########
 
